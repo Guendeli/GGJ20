@@ -2,7 +2,8 @@
     "name": "Game",
     "references": [
         "GUID:54b81ccd973bd4e42937ee2abf857d04",
-        "GUID:dda5a6621bea99946a6c8711b59e7977"
+        "GUID:dda5a6621bea99946a6c8711b59e7977",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

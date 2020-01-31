@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
+using VRTK.Controllables;
 
 namespace Game
 {
@@ -9,23 +11,29 @@ namespace Game
     {
         public MorseData MorseSettings;
         public SpriteRenderer BlinkTarget;
-
+        public VRTK_BaseControllable Slider;
+        public TMPro.TextMeshPro DisplayText;
+        
         public string TextToMorse;
         public string MorseToText;
-        MorseToStringUtil _morseTranslator;
+        private MorseToStringUtil _morseTranslator;
+        private AudioSource _beepSource;
 
 
         private void Start()
         {
             _morseTranslator = new MorseToStringUtil();
-            Debug.Log("TtM: " + _morseTranslator.TranslateTextToMorse(TextToMorse));
-            Debug.Log("MtT: " + _morseTranslator.TranslateMorseToText(MorseToText));
-            
+            _beepSource = BlinkTarget.GetComponent<AudioSource>();
+            Slider = (Slider == null ? GetComponentInChildren<VRTK_BaseControllable>() : Slider);
+            Slider.ValueChanged += SliderToDisplayEvent;
+            StartCoroutine(ProcessLetter(TextToMorse));
+
+
         }
 
-        public void StartTest()
+        private void SliderToDisplayEvent(object sender, ControllableEventArgs e)
         {
-            StartCoroutine(ProcessLetter(TextToMorse));
+            DisplayText.text = e.value.ToString() + "Hz";
         }
 
 
@@ -53,13 +61,21 @@ namespace Game
                 }
                 yield return new WaitForSeconds(MorseSettings.InterLetterBlinkSpeed);
             }
-            
+            StartCoroutine(ProcessLetter(TextToMorse));
+
         }
         private IEnumerator Blink(float value)
         {
+            Beep(_beepSource, true);
             BlinkTarget.color = MorseSettings.BlinkColor;
             yield return new WaitForSeconds(value);
             BlinkTarget.color = Color.white;
+            Beep(_beepSource, false);
+        }
+
+        private void Beep(AudioSource target,bool value)
+        {
+            target.enabled = value;
         }
         
         #endregion 

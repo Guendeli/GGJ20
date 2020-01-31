@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DotBlinkSpeed: 0.2
   DashBlinkSpeed: 0.6
-  InterLetterBlinkSpeed: 0.6
+  InterLetterBlinkSpeed: 1.2
   IntraLetterBlinkSpeed: 0.2
   BlinkColor: {r: 0.02922988, g: 1, b: 0, a: 1}
