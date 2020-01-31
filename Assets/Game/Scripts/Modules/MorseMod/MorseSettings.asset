@@ -23,6 +23,6 @@ MonoBehaviour:
     Value: 57
   DotBlinkSpeed: 0.2
   DashBlinkSpeed: 0.6
-  InterLetterBlinkSpeed: 1.2
+  InterLetterBlinkSpeed: 1.5
   IntraLetterBlinkSpeed: 0.2
   BlinkColor: {r: 0.02922988, g: 1, b: 0, a: 1}
