@@ -277,7 +277,7 @@ public class OVRGradleGeneration
 						{
 							applicationNode.SetAttribute("networkSecurityConfig", androidNamepsaceURI, "@xml/network_sec_config");
 
-							string securityConfigFile = "O:/Code/Tools/Oculus/VR/Editor/network_sec_config.xml";
+							string securityConfigFile = Path.Combine(Application.dataPath, "ThirdParty/Oculus/VR/Editor/network_sec_config.xml");
 							string xmlDirectory = Path.Combine(path, "src/main/res/xml");
 							try
 							{
