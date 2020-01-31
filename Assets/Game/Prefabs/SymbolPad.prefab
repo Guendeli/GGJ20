@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 347542672270131989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.000000024835265, z: 0.05100002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 7575299804556120557}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.16}
@@ -106,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 3539484663189010997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.051}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 5092829215610530355}
   m_RootOrder: 0
@@ -151,7 +151,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.16}
@@ -186,7 +186,7 @@ Transform:
   m_GameObject: {fileID: 3780094212571266905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.000000024835265, z: 0.05100002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 3419411220377241401}
   m_RootOrder: 0
@@ -229,15 +229,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4086611973599336193
@@ -612,6 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6975134721942277241}
+  - component: {fileID: 134305175710726833}
   m_Layer: 0
   m_Name: SymbolPad
   m_TagString: Untagged
@@ -638,6 +639,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 180}
+--- !u!114 &134305175710726833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239721658870546026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd75c5ed0f90d7745ba45b952aaa05b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SymbolSettings: {fileID: 11400000, guid: ce7ea7ab41f58fc4688ea30dba51d30f, type: 2}
+  DisplayText: {fileID: 5465469899089650039}
+  ButtonAmount: 4
 --- !u!1 &7187995529323952684
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +680,7 @@ Transform:
   m_GameObject: {fileID: 7187995529323952684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.000000024835265, z: 0.05100002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 3392590041343134249}
   m_RootOrder: 0
@@ -709,7 +725,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.16}
@@ -792,13 +808,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
-      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
-        type: 3}
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnValidateButton
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
@@ -820,6 +831,11 @@ PrefabInstance:
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
+        type: 3}
+      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6239721658870546026}
     - target: {fileID: 2764436887228431373, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -925,13 +941,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
-      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
-        type: 3}
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnValidateButton
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
@@ -953,6 +964,11 @@ PrefabInstance:
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
+        type: 3}
+      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6239721658870546026}
     - target: {fileID: 2764436887228431373, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1058,13 +1074,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
-      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
-        type: 3}
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnValidateButton
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
@@ -1086,6 +1097,11 @@ PrefabInstance:
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
+        type: 3}
+      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6239721658870546026}
     - target: {fileID: 2764436887228431373, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1191,13 +1207,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
-      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
-        type: 3}
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnValidateButton
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
@@ -1219,6 +1230,11 @@ PrefabInstance:
       propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3979706866676625989, guid: b53393e8686eb954fbcb22cb278d2993,
+        type: 3}
+      propertyPath: OnTouch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6239721658870546026}
     - target: {fileID: 2764436887228431373, guid: b53393e8686eb954fbcb22cb278d2993,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

@@ -19,6 +19,7 @@ namespace Game
         // Start is called before the first frame update
         void Start()
         {
+            _returnData = new List<SymbolButton>();
             StartCoroutine(InitData(ButtonAmount));
         }
 
@@ -46,13 +47,25 @@ namespace Game
                 }
                 yield return new WaitForEndOfFrame();
             }
+            RenderSymbolData();
         }
 
         private void RenderSymbolData()
         {
-
+            for(int i = 0; i < _buttonsList.Count; i++)
+            {
+                SpriteRenderer spr = _buttonsList[i].GetComponentInChildren<SpriteRenderer>();
+                if(spr != null)
+                {
+                    spr.sprite = _returnData[i].Image;
+                }
+            }
         }
 
+        public void ValidateData()
+        {
+
+        }
 
         #endregion 
     }

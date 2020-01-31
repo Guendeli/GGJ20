@@ -67598,27 +67598,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141631857}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &134305175710726832 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6239721658870546026, guid: bae9a14874db2934cabd0ef39f8ac1b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1175441954424197424}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &134305175710726833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134305175710726832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd75c5ed0f90d7745ba45b952aaa05b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SymbolSettings: {fileID: 11400000, guid: ce7ea7ab41f58fc4688ea30dba51d30f, type: 2}
-  DisplayText: {fileID: 6595871095681691719}
-  ButtonAmount: 4
 --- !u!4 &857793611002409827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7786514644534491924, guid: 3e8a6ecf6d4a9544cbdc594425ddc463,
@@ -67707,8 +67686,7 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3561178767835735559, guid: bae9a14874db2934cabd0ef39f8ac1b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae9a14874db2934cabd0ef39f8ac1b5, type: 3}
 --- !u!4 &4001021660255553699 stripped
 Transform:
@@ -67716,18 +67694,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1175441954424197424}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6595871095681691719 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5465469899089650039, guid: bae9a14874db2934cabd0ef39f8ac1b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1175441954424197424}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7487304122513688695
 PrefabInstance:
   m_ObjectHideFlags: 0
