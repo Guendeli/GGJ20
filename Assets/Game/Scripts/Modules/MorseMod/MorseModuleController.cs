@@ -18,7 +18,8 @@ namespace Game
         private MorseToStringUtil _morseTranslator;
         private AudioSource _beepSource;
         private int _targetValue;
-
+        private int _currentValue;
+        private bool _validate;
         private void Start()
         {
             _morseTranslator = new MorseToStringUtil();
@@ -36,23 +37,37 @@ namespace Game
         private void SliderToDisplayEvent(object sender, ControllableEventArgs e)
         {
             DisplayText.text = e.value.ToString() + "Hz";
+            _currentValue = (int)e.value;
         }
 
 
         #region Public Methods
         public void OnValidate()
         {
-            if (Slider == null)
+            if (Slider == null || _validate)
                 return;
 
 
-            if ((int)Slider.GetValue() == _targetValue)
+            if (_currentValue == _targetValue)
             {
-                Debug.Log("GOOD"); // Saturday
+                _validate = true;
             }
             else
             {
-                Debug.Log("BAAD"); // Saturday
+                _validate = false;
+            }
+        }
+
+        public void PostValidate(GameObject go)
+        {
+            if (_validate)
+            {
+                go.GetComponentInChildren<MeshRenderer>().material.color = Color.green;
+                StopAllCoroutines();
+                Beep(_beepSource, false);
+            } else
+            {
+
             }
         }
         #endregion 
