@@ -31,6 +31,7 @@ public class ColorSquaredController : MonoBehaviour
         }
         InitButtonColor(ColorButtonSettings.GetSettingById("Normal"));
         StartBlink();
+        TextUtils.Display(DisplayText, "Thrusters Overloaded");
     }
 
     private void InitButtonColor(ColorSquaredPuzzleSettings setting)

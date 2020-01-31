@@ -21,6 +21,7 @@ namespace Game
         {
             _returnData = new List<SymbolButton>();
             StartCoroutine(InitData(ButtonAmount));
+            TextUtils.Display(DisplayText, "Warpdrive depleted !");
         }
 
         // Update is called once per frame
