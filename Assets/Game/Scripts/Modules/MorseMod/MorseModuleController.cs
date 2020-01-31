@@ -26,6 +26,7 @@ namespace Game
             _beepSource = BlinkTarget.GetComponent<AudioSource>();
             Slider = (Slider == null ? GetComponentInChildren<VRTK_BaseControllable>() : Slider);
             Slider.ValueChanged += SliderToDisplayEvent;
+            TextToMorse = MorseSettings.Wordlist[UnityEngine.Random.Range(0, MorseSettings.Wordlist.Length)];
             StartCoroutine(ProcessLetter(TextToMorse));
 
 

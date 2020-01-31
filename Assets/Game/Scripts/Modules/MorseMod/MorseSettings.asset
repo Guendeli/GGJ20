@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249080dce45d38f449ee97c31f020469, type: 3}
   m_Name: MorseSettings
   m_EditorClassIdentifier: 
+  Wordlist:
+  - dear
+  - beer
+  - cats
+  - dark
   DotBlinkSpeed: 0.2
   DashBlinkSpeed: 0.6
   InterLetterBlinkSpeed: 1.2
