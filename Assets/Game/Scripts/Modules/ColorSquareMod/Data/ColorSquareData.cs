@@ -20,6 +20,7 @@ public class ColorSquaredPuzzleSettings
 {
     public ColorPuzzleType Id;
     public ColorSquareButtonConf[] ButtonsConf;
+    public int SequenceNbr;
 }
 
 [CreateAssetMenu(fileName = "ColorSquareDataSetting", menuName = "Data/ColorSquareDataSetting", order = 1)]
@@ -37,5 +38,29 @@ public class ColorSquareData : ScriptableObject
             }
         }
         return null;
+    }
+
+    public Color GetTargetBySource(Color source, ColorSquaredPuzzleSettings setting)
+    {
+        foreach(ColorSquareButtonConf button in setting.ButtonsConf)
+        {
+            if(button.ButtonColor == source)
+            {
+                return button.TargetColor;
+            }
+        }
+        return Color.black;
+    }
+
+    public Color GetSourceByTarget(Color target, ColorSquaredPuzzleSettings setting)
+    {
+        foreach (ColorSquareButtonConf button in setting.ButtonsConf)
+        {
+            if (button.TargetColor == target)
+            {
+                return button.ButtonColor;
+            }
+        }
+        return Color.black;
     }
 }
