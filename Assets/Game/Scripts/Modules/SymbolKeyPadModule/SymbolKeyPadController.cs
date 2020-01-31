@@ -15,7 +15,8 @@ namespace Game
 
         private SymbolColumn _targetColumn; // Used for final comparison
         private List<SymbolButton> _returnData;
-
+        private int _lastValid = -1;
+        private int _success = 0;
         // Start is called before the first frame update
         void Start()
         {
@@ -63,9 +64,37 @@ namespace Game
             }
         }
 
-        public void ValidateData()
+        public void ValidateData(VRTK_InteractableObject self)
         {
+            string imageName = self.GetComponentInChildren<SpriteRenderer>().sprite.name;
+            int id = _targetColumn.GetIdByImageName(imageName);
+            if (id <= _lastValid)
+            {
+                _lastValid = -1;
+                _success = 0;
+                TextUtils.Display(DisplayText, "Critical ! Warpdrive jammed");
 
+            }
+            else
+            {
+                _lastValid = id;
+                _success++;
+                TextUtils.Display(DisplayText, "Injecting Repair Payload " + _success);
+            }
+
+            if(_success >= _buttonsList.Count)
+            {
+                LockOperation();
+            }
+        }
+
+        private void LockOperation()
+        {
+            TextUtils.Display(DisplayText, "Warp Drive Repaired");
+            for (int i = 0; i < _buttonsList.Count; i++)
+            {
+                _buttonsList[i].GetComponent<Collider>().enabled = false;
+            }
         }
 
         #endregion 

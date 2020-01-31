@@ -15,6 +15,18 @@ namespace Game
     public class SymbolColumn
     {
         public SymbolButton[] Symbols;
+
+        public int GetIdByImageName(string image)
+        {
+            foreach(SymbolButton button in Symbols)
+            {
+                if (button.Image.name.Equals(image))
+                {
+                    return button.Id;
+                }
+            }
+            return 666;
+        }
     }
 
     [CreateAssetMenu(fileName = "SymbolDataSetting", menuName = "Data/SymbolDataSetting")]
