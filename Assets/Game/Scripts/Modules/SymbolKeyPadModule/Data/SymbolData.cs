@@ -7,20 +7,20 @@ namespace Game
     [System.Serializable]
     public class SymbolButton
     {
-        public Sprite image;
-        public int id;
+        public Sprite Image;
+        public int Id;
     }
 
     [System.Serializable]
     public class SymbolColumn
     {
-        public SymbolButton[] symbols;
+        public SymbolButton[] Symbols;
     }
 
     [CreateAssetMenu(fileName = "SymbolDataSetting", menuName = "Data/SymbolDataSetting")]
     public class SymbolData : ScriptableObject
     {
-        public SymbolColumn[] column;
+        public SymbolColumn[] Column;
     }
 
 
