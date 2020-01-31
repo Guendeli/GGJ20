@@ -11361,7 +11361,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440818379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -66647,7 +66647,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141631857}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &665070512138330694
+--- !u!1001 &8298271846510058777
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -66657,7 +66657,7 @@ PrefabInstance:
     - target: {fileID: 8606034303443359989, guid: f955741855107d647aa2f76b77d36ac7,
         type: 3}
       propertyPath: m_Name
-      value: MorseControllerTest
+      value: MorseController
       objectReference: {fileID: 0}
     - target: {fileID: 8606034303443359991, guid: f955741855107d647aa2f76b77d36ac7,
         type: 3}
@@ -66714,22 +66714,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8606034304423712137, guid: f955741855107d647aa2f76b77d36ac7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606034304423712137, guid: f955741855107d647aa2f76b77d36ac7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606034304423712137, guid: f955741855107d647aa2f76b77d36ac7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.23
+      objectReference: {fileID: 0}
     - target: {fileID: 665070512414437123, guid: f955741855107d647aa2f76b77d36ac7,
         type: 3}
       propertyPath: ignoreCollisionsWith.Array.data[1]
       value: 
       objectReference: {fileID: 1574193365}
-    - target: {fileID: 665070512414437123, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: useStepAsValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 665070512414437123, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: minMaxThreshold
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 665070512031053950, guid: f955741855107d647aa2f76b77d36ac7,
+    - target: {fileID: 8298271846336186145, guid: f955741855107d647aa2f76b77d36ac7,
         type: 3}
       propertyPath: m_Mesh
       value: 
