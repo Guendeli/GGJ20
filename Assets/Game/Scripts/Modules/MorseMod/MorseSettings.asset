@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20553fac56ec59645857c0732b787431, type: 3}
-  m_Name: OVRBuildConfig
+  m_Script: {fileID: 11500000, guid: 249080dce45d38f449ee97c31f020469, type: 3}
+  m_Name: MorseSettings
   m_EditorClassIdentifier: 
-  androidSDKPath: D:\Android\SDK
-  gradlePath: 
-  jdkPath: 
+  DotBlinkSpeed: 0.2
+  DashBlinkSpeed: 0.6
+  InterLetterBlinkSpeed: 0.6
+  IntraLetterBlinkSpeed: 0.2
+  BlinkColor: {r: 0.02922988, g: 1, b: 0, a: 1}
