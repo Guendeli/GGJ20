@@ -66719,6 +66719,16 @@ PrefabInstance:
       propertyPath: ignoreCollisionsWith.Array.data[1]
       value: 
       objectReference: {fileID: 1574193365}
+    - target: {fileID: 665070512414437123, guid: f955741855107d647aa2f76b77d36ac7,
+        type: 3}
+      propertyPath: useStepAsValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 665070512414437123, guid: f955741855107d647aa2f76b77d36ac7,
+        type: 3}
+      propertyPath: minMaxThreshold
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 665070512031053950, guid: f955741855107d647aa2f76b77d36ac7,
         type: 3}
       propertyPath: m_Mesh
