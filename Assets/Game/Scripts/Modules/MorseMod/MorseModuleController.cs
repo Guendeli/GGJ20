@@ -42,13 +42,17 @@ namespace Game
         #region Public Methods
         public void OnValidate()
         {
+            if (Slider == null)
+                return;
+
+
             if ((int)Slider.GetValue() == _targetValue)
             {
-                Debug.Log("GOOD");
+                Debug.Log("GOOD"); // Saturday
             }
             else
             {
-                Debug.Log("BAAD");
+                Debug.Log("BAAD"); // Saturday
             }
         }
         #endregion 
