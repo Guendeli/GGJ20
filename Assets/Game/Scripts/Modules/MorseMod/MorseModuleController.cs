@@ -13,12 +13,11 @@ namespace Game
         public SpriteRenderer BlinkTarget;
         public VRTK_BaseControllable Slider;
         public TMPro.TextMeshPro DisplayText;
-        
         public string TextToMorse;
-        public string MorseToText;
+        
         private MorseToStringUtil _morseTranslator;
         private AudioSource _beepSource;
-
+        private int _targetValue;
 
         private void Start()
         {
@@ -26,7 +25,7 @@ namespace Game
             _beepSource = BlinkTarget.GetComponent<AudioSource>();
             Slider = (Slider == null ? GetComponentInChildren<VRTK_BaseControllable>() : Slider);
             Slider.ValueChanged += SliderToDisplayEvent;
-            TextToMorse = MorseSettings.Wordlist[UnityEngine.Random.Range(0, MorseSettings.Wordlist.Length)];
+            TextToMorse = MorseSettings.Wordlist[UnityEngine.Random.Range(0, MorseSettings.Wordlist.Length)].Word;
             StartCoroutine(ProcessLetter(TextToMorse));
 
 
@@ -38,7 +37,19 @@ namespace Game
         }
 
 
-
+        #region Public Methods
+        public void OnValidate()
+        {
+            if ((int)Slider.GetValue() == _targetValue)
+            {
+                Debug.Log("GOOD");
+            }
+            else
+            {
+                Debug.Log("BAAD");
+            }
+        }
+        #endregion 
         #region Implementations
         private IEnumerator ProcessLetter(string humanText)
         {

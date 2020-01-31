@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: MorseSettings
   m_EditorClassIdentifier: 
   Wordlist:
-  - dear
-  - beer
-  - cats
-  - dark
+  - Word: dear
+    Value: 86
+  - Word: beer
+    Value: 32
+  - Word: dark
+    Value: 5
+  - Word: cats
+    Value: 57
   DotBlinkSpeed: 0.2
   DashBlinkSpeed: 0.6
   InterLetterBlinkSpeed: 1.2
