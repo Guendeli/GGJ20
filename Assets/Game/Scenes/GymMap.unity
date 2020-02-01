@@ -4597,7 +4597,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1818472450}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &199376674
+--- !u!64 &199376677
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4608,7 +4608,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: -6320333208051293426, guid: 39770c6f3e08749438dafcc8d02245fd, type: 3}
 --- !u!1 &201855787
@@ -22924,7 +22924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868030655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.44, y: -1.59, z: 0}
+  m_LocalPosition: {x: -0.44, y: -2.07, z: 0}
   m_LocalScale: {x: 500, y: 1, z: 500}
   m_Children: []
   m_Father: {fileID: 1375112423}
@@ -68568,46 +68568,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589472481164641728, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589472481164641728, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589472481164474062, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589472481164474062, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264613665965344109, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264613665965344109, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264613665965536867, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264613665965536867, guid: f955741855107d647aa2f76b77d36ac7,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f955741855107d647aa2f76b77d36ac7, type: 3}
