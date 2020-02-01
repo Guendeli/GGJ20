@@ -13,7 +13,8 @@ public class StartRoundTutorialStep : FTUEStep
         Hashtable hash = iTween.Hash("from", 0, "to", 1, "time", FadeTime, "onupdate", "Fade");
         iTween.ValueTo(gameObject, hash);
 
-        while (!(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) || Input.GetKeyDown(KeyCode.Space)))
+        while (
+            !(OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) || Input.GetKey(KeyCode.Space)))
         {
             yield return new WaitForEndOfFrame();
         }
