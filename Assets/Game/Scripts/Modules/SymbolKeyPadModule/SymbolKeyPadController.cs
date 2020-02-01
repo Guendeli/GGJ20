@@ -95,6 +95,7 @@ namespace Game
             {
                 _buttonsList[i].GetComponent<Collider>().enabled = false;
             }
+            GameManager.Instance.ValidateStep();
         }
 
         #endregion 

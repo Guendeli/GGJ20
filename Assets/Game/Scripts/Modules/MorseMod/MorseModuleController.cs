@@ -65,6 +65,7 @@ namespace Game
                 go.GetComponentInChildren<MeshRenderer>().material.color = Color.green;
                 StopAllCoroutines();
                 Beep(_beepSource, false);
+                GameManager.Instance.ValidateStep();
             } else
             {
                 // DO BAD STUFF, Saturday

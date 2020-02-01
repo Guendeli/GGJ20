@@ -84,6 +84,7 @@ public class ColorSquaredController : MonoBehaviour
             _buttonsList[i].GetComponentInChildren<Renderer>().material.color = Color.white;
             _buttonsList[i].GetComponent<Collider>().enabled = false;
         }
+        GameManager.Instance.ValidateStep();
     }
 
 
