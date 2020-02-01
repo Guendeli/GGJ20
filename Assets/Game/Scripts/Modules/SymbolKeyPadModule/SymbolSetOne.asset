@@ -27,7 +27,7 @@ MonoBehaviour:
     - Image: {fileID: 21300000, guid: 64634f89d03cffc45ab5165ce6bb6e38, type: 3}
       Id: 5
     - Image: {fileID: 21300000, guid: cea166877fbd55e49919de18557a26e8, type: 3}
-      Id: 0
+      Id: 6
   - Symbols:
     - Image: {fileID: 21300000, guid: 2c578f4dcc81da144a1141d0f764a299, type: 3}
       Id: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
     - Image: {fileID: 21300000, guid: 457395fdacb7cc1449294727c2549c6b, type: 3}
       Id: 5
     - Image: {fileID: 21300000, guid: 2add027fde9105640917048ba3c9bea6, type: 3}
-      Id: 0
+      Id: 6
   - Symbols:
     - Image: {fileID: 21300000, guid: d9993a45a50c831499c13cb56977b238, type: 3}
       Id: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
     - Image: {fileID: 21300000, guid: 606ca158f2683e948bc85e51445b4d2d, type: 3}
       Id: 5
     - Image: {fileID: 21300000, guid: 688d6c47816f3e54794aa49b9f49408a, type: 3}
-      Id: 0
+      Id: 6
   - Symbols:
     - Image: {fileID: 21300000, guid: 74fb988f3ef5ed740a22a96f95356e60, type: 3}
       Id: 0
@@ -72,4 +72,4 @@ MonoBehaviour:
     - Image: {fileID: 21300000, guid: f89429d762062f94eb179c422fbbce67, type: 3}
       Id: 5
     - Image: {fileID: 21300000, guid: 2c578f4dcc81da144a1141d0f764a299, type: 3}
-      Id: 0
+      Id: 6
